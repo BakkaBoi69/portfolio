@@ -1,0 +1,42 @@
+* {
+    background-color: rgb(28, 28, 28);
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 180px;
+}
+
+/* Style specific to this page starts from here */
+
+a,
+.logo-and-name {
+    font-size: 25px;
+    background-color: inherit;
+    text-decoration: none;
+}
+
+#before-time {
+    align-self: flex-start;
+}
+
+#after-time {
+    align-self: flex-end;
+}
