@@ -1,6 +1,6 @@
 * {
     background-color: rgb(28, 28, 28);
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -41,7 +41,7 @@ body {
     align-items: center;
 }
 
-.footer>a>img {
+.footer>a>svg {
     width: 60px;
     height: auto;
 }
@@ -97,35 +97,43 @@ body {
     margin: 0.5vh;
 }
 
-.footer,
-.header {
-    background-color: rgba(28, 28, 28, 0);
-}
-
 .footer:hover,
 .header:hover {
-    background-color: rgb(28, 28, 28);
+    background-color: #bbb;
     -webkit-transition: background-color 1s ease-in;
     transition: background-color 1s ease-in;
 }
 
 .footer,
 .header {
-    background-color: rgb(28, 28, 28, 0);
+    background-color: #000;
     -webkit-transition: background-color 1s ease-in;
     transition: background-color 1s ease-in;
 }
 
-.birthday {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.footer>a,
+.header>a {
+    color: #fff;
+    -webkit-transition: color 1s ease-in;
+    transition: color 1s ease-in;
+
 }
 
-#before-time {
-    align-self: flex-start;
+.footer:hover>a,
+.header:hover>a {
+    color: #000;
+    -webkit-transition: color 1s ease-in;
+    transition: color 1s ease-in;
 }
 
-#after-time {
-    align-self: flex-end;
+.svg-image {
+    fill: #fff;
+    -webkit-transition: fill 1s ease-in;
+    transition: fill 1s ease-in;
+}
+
+.footer:hover .svg-image {
+    fill: #000;
+    -webkit-transition: fill 1s ease;
+    transition: fill 1s ease;
 }
