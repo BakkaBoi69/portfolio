@@ -1,5 +1,6 @@
 // Specify your birthdate
-var birthDate = new Date("2005-05-28T07:04:00");
+// Format: "yyyy-mm-ddThh:mm:ss"
+let birthDate = new Date("2005-05-28T07:04:00");
 
 // Function to calculate difference between birthDate and present moment     
 function updateAge() {

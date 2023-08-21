@@ -14,10 +14,10 @@ body {
 
 .header,
 .footer {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(24, 24, 24);
     display: flex;
     justify-content: space-between;
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 .content {
@@ -26,10 +26,6 @@ body {
     align-items: center;
     padding: 0px 180px;
     margin-bottom: auto;
-}
-
-.footer {
-    margin-top: auto;
 }
 
 .footer>*,
@@ -63,9 +59,51 @@ a,
 
 /* Style specific to this page starts from here */
 
+body {
+    background-image: url('/img/reverse-full-moon.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    gap: 9vh;
+}
+
+.moon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 12vh;
+}
+
+.content,
+.moon-text,
+.moon-text>*,
+.moon-text>*>*,
+.about-me,
+.about-me>* {
+    background-color: rgba(28, 28, 28, 0);
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me>* {
+    margin: 0.5vh;
+}
+
+
 .birthday {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 #before-time {
