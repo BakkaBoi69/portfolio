@@ -46,13 +46,11 @@ body {
     height: auto;
 }
 
-a,
-.logo-and-name {
+a {
     background-color: inherit;
     text-decoration: none;
 }
 
-.logo-and-name,
 .header>a {
     font-size: 30px;
 }
@@ -61,7 +59,7 @@ a,
 
 body {
     background-image: url('/img/reverse-full-moon.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -99,6 +97,24 @@ body {
     margin: 0.5vh;
 }
 
+.footer,
+.header {
+    background-color: rgba(28, 28, 28, 0);
+}
+
+.footer:hover,
+.header:hover {
+    background-color: rgb(28, 28, 28);
+    -webkit-transition: background-color 1s ease-in;
+    transition: background-color 1s ease-in;
+}
+
+.footer,
+.header {
+    background-color: rgb(28, 28, 28, 0);
+    -webkit-transition: background-color 1s ease-in;
+    transition: background-color 1s ease-in;
+}
 
 .birthday {
     display: flex;
