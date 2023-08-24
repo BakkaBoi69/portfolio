@@ -99,7 +99,7 @@ body {
 
 .footer:hover,
 .header:hover {
-    background-color: #bbb;
+    background-color: #ddd;
     -webkit-transition: background-color 1s ease-in;
     transition: background-color 1s ease-in;
 }
