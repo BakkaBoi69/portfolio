@@ -1,0 +1,135 @@
+* {
+    background-color: rgb(28, 28, 28);
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.header,
+.footer {
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 180px;
+    margin-bottom: auto;
+}
+
+.footer>*,
+.footer>*>* {
+    background-color: inherit;
+}
+
+.footer>a {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer>a>svg {
+    width: 60px;
+    height: auto;
+}
+
+a {
+    background-color: inherit;
+    text-decoration: none;
+}
+
+.header>a {
+    font-size: 30px;
+}
+
+/* Style specific to this page starts from here */
+
+body {
+    background-image: url('/img/earth-full.webp');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.content {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    gap: 9vh;
+    background-color: rgba(28, 28, 28, 0);
+}
+
+.course-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: inherit;
+}
+
+.course-block {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(28, 28, 28);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.course-block>*,
+.course-block>*>* {
+    background-color: inherit;
+}
+
+.footer:hover,
+.header:hover {
+    background-color: #ddd;
+    -webkit-transition: background-color 1s ease-in;
+    transition: background-color 1s ease-in;
+}
+
+.footer,
+.header {
+    background-color: #000;
+    -webkit-transition: background-color 1s ease-in;
+    transition: background-color 1s ease-in;
+}
+
+.footer>a,
+.header>a {
+    color: #fff;
+    -webkit-transition: color 1s ease-in;
+    transition: color 1s ease-in;
+
+}
+
+.footer:hover>a,
+.header:hover>a {
+    color: #000;
+    -webkit-transition: color 1s ease-in;
+    transition: color 1s ease-in;
+}
+
+.svg-image {
+    fill: #fff;
+    -webkit-transition: fill 1s ease-in;
+    transition: fill 1s ease-in;
+}
+
+.footer:hover .svg-image {
+    fill: #000;
+    -webkit-transition: fill 1s ease;
+    transition: fill 1s ease;
+}

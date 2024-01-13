@@ -71,7 +71,7 @@ body {
     gap: 9vh;
 }
 
-.moon-text {
+.quote-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -80,9 +80,9 @@ body {
 }
 
 .content,
-.moon-text,
-.moon-text>*,
-.moon-text>*>*,
+.quote-text,
+.quote-text>*,
+.quote-text>*>*,
 .about-me,
 .about-me>* {
     background-color: rgba(28, 28, 28, 0);
@@ -97,22 +97,25 @@ body {
     margin: 0.5vh;
 }
 
-.footer:hover,
-.header:hover {
-    background-color: #ddd;
+.footer,
+.header {
+    /* Changing header/footer color itself */
+    background-color: #000;
     -webkit-transition: background-color 1s ease-in;
     transition: background-color 1s ease-in;
 }
 
-.footer,
-.header {
-    background-color: #000;
+.footer:hover,
+.header:hover {
+    /* Changing header/footer color itself */
+    background-color: #fff;
     -webkit-transition: background-color 1s ease-in;
     transition: background-color 1s ease-in;
 }
 
 .footer>a,
 .header>a {
+    /* Changing header/footer TEXT color */
     color: #fff;
     -webkit-transition: color 1s ease-in;
     transition: color 1s ease-in;
@@ -121,18 +124,21 @@ body {
 
 .footer:hover>a,
 .header:hover>a {
+    /* Changing header/footer TEXT color */
     color: #000;
     -webkit-transition: color 1s ease-in;
     transition: color 1s ease-in;
 }
 
 .svg-image {
+    /* Changing footer SVG fill color */
     fill: #fff;
     -webkit-transition: fill 1s ease-in;
     transition: fill 1s ease-in;
 }
 
 .footer:hover .svg-image {
+    /* Changing footer SVG fill color */
     fill: #000;
     -webkit-transition: fill 1s ease;
     transition: fill 1s ease;

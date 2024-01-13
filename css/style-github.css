@@ -60,7 +60,7 @@ a {
 body {
     background-image: url('/img/earth-full.webp');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 
@@ -75,10 +75,11 @@ body {
 .course-block {
     display: flex;
     flex-direction: row;
-
+    background-color: rgb(28, 28, 28);
+    padding: 10px;
+    border-radius: 20px;
 }
 
-.course-block,
 .course-block>*,
 .course-block>*>* {
     background-color: inherit;
